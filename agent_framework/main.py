@@ -32,10 +32,10 @@ def get_weather(
 # Create the agent
 agent = ChatAgent(
     name="WeatherAgent",
-    description="A helpful agent that provides weather information",
-    instructions="You are a weather assistant. Provide current weather information for any location.",
+    description="A helpful agent",
+    instructions="You are a general purpose assistant. try to answer user's questions. Call available tools if required.",
     chat_client=OpenAIChatClient(
-        api_key=os.environ.get("MY_OPENAI_API_KEY", ""),
+        api_key=os.environ.get("OPENAI_API_KEY", ""),
         model_id="gpt-5-nano"
     ),
     tools=[buy_stocks,get_weather, get_stock_price],

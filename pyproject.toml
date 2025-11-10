@@ -13,4 +13,7 @@ dependencies = [
     "langchain-ollama>=0.3.8",
     "langchain-openai>=0.3.34",
     "langgraph>=0.6.8",
+    "strands-agents[litellm]>=1.15.0",
+    "strands-agents-tools>=0.2.14",
+    "bedrock-agentcore>=1.0.5",
 ]
